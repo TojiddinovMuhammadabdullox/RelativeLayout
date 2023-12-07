@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/hitler"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/img" />
+
+    <TextView
+        android:id="@+id/usernametxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hitler"
+        android:layout_marginStart="@dimen/marstart"
+        android:layout_marginTop="60dp"
+        android:text="Ismingiz: " />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/usernametxt"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/usernametxt"
+        android:hint="Ismingizni kiriting" />
+
+    <TextView
+        android:id="@+id/passwordtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usernametxt"
+        android:layout_marginStart="@dimen/marstart"
+        android:layout_marginTop="24dp"
+        android:text="Parol: " />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/passwordtxt"
+        android:layout_marginStart="24dp"
+        android:layout_toEndOf="@id/passwordtxt"
+        android:hint="Parol kiriting" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordtxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Login" />
+
+</RelativeLayout>
